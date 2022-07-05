@@ -1,0 +1,23 @@
+#just in case i lose my make.conf and dont have to write down use flags
+
+COMMON_FLAGS="-march=native -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+MAKEOPTS="-j2"
+ACCEPT_LICENSE="*"
+VIDEO_CARDS="intel i695"
+USE="X -a52 -altivec -apache2 -aqua -bash-completion -berkdb -bidi -blas -mysql
+-mysqli -nas -neXt -neon -netcdf-ocam -ocamlopt -oci8 -oci8-instant-client -oracle -pda -plasma -postscript -postgres -quicktime -ruby -samba -semantic-desktop
+-sox -sqlite -statup-notification -systemd -theora-timidity usb -videos wayland
+wifi -xemacs zsh-completion -bluetooth -cairo -cdb -cdda -cddb -cdr
+-cgi -cjk -clamav -coreaudio crypt -css -cups -dbi -dbm dbus -debug -dedicated -dts -dv -dvb -dvd -dvdr -eds -emacs -emboss -fastcgi -fortran -fltk -freetds -geoip -geolocation -gps -gnome -gnome-keyring -gphoto2 -gtk-doc -ibm -ieee1394 -infiniband -ipod -ios jit -kerberos -lapack -lash -latex -ldap -lirc -lua -mad -mssql -multilib -musicbrainz  "
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
